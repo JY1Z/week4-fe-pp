@@ -4,7 +4,13 @@ import Tour from "./Tour.js";
 
 const Tours = () => {
   const [toursData, setToursData] = useState(tours);
-
+  // const  handelSetToursData=(e)=>{
+  //   setToursData(e.target.vlue)
+  // }
+  const handeleDelete = (toursData, id) => {
+    const updateToursData = toursData.filter((data) => data.id !== id)
+    setToursData(updateToursData)
+  }
   return (
     <section className="section" id="tour">
       <div className="section-title">
@@ -14,8 +20,14 @@ const Tours = () => {
       </div>
       <div className="section-center featured-center">
         {toursData.map((tour) => {
-          return <Tour {...tour} key={tour.id}/>
+          return (<div>
+            <Tour {...tour} key={tour.id} />
+            <button onClick={() => handeleDelete(toursData,tour.id)}> Delete </button>
+          </div>)
+
+
         })}
+
       </div>
     </section>
   );
