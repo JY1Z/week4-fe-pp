@@ -1,14 +1,19 @@
 import { services } from '../data'
+import { useState } from 'react';
 import Title from './Title'
-import Service from './Service'
+import Service from './Service' 
 
 const Services = () => {
+  const [serviceData,setServiceData]=useState(services)
+  // const  handelsetServiceData=()=>{
+  //   setServiceData()
+  // }
   return (
     <section className='section services' id='services'>
       <Title title='our' subTitle='services' />
 
       <div className='section-center services-center'>
-        {services.map((service) => {
+        {serviceData.map((service) => {
           return <Service {...service} key={service.id} />
         })}
       </div>
