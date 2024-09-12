@@ -524,7 +524,7 @@ min-height:calc(100vh - 62px);
   justify-content:up;
   background-color: rgba(228, 230, 238, 0.705);
   border: #333131 solid 2px;
-  margin: 50px auto;
+  margin:20px 20px 20px 20px;
   width: 400px;
   border-radius: 20px;
 
