@@ -2,22 +2,22 @@ import React, { useState } from 'react';
 
 function Registration() {
     return (
-        <div>
+        <div className='regist-div'>
         <h2>Registration</h2>
-        <form>
+        <form className='regist-form'>
           <div>
-            <label htmlFor='name'>Name:</label>
+            <label htmlFor='name'><b>Name:</b></label>
             <input id='name' type='text' />
           </div>
           <div>
-            <label htmlFor='email'>Email:</label>
+            <label htmlFor='email'><b>Email:</b></label>
             <input id='email' type='text' />
           </div>
           <div>
-            <label htmlFor='password'>Password:</label>
+            <label htmlFor='password'><b>Password:</b></label>
             <input id='password' type='text' />
           </div>
-          <button>Submit</button>
+          <button className='button'>Submit</button>
         </form>
       </div>
 

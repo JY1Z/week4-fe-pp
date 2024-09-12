@@ -518,3 +518,34 @@ min-height:calc(100vh - 62px);
   font-size: 1.5rem;
   text-transform: uppercase;
 }
+.regist-div{
+  display: flex;
+  flex-direction: column;
+  justify-content:up;
+  background-color: rgba(228, 230, 238, 0.705);
+  border: #333131 solid 2px;
+  margin: 50px auto;
+  width: 400px;
+  border-radius: 20px;
+
+}
+.regist-div >h2{
+  text-align: center;
+  font-size: large;
+  margin-top: 20px;
+}
+.regist-form{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.regist-form > div >label >b{
+  display: inline-block;
+  width: 90px;
+}
+.button{
+  width: 60px;
+  background-color: rgb(41, 115, 44);
+  color: #ffffff;
+  border-radius: 4px;
+}
