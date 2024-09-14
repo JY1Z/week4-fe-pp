@@ -332,8 +332,22 @@ Featured Tours
   margin-right: 0.25rem;
 }
 .tour-btn {
+  background-color: var(--clr-primary-5);
+  color: var(--clr-primary-1);
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 100%;
   text-align: center;
+  margin-top: 1rem;
+  border-radius: 5px;
 }
+
+.tour-btn:hover {
+  background-color: var(--clr-primary-7);
+}
+
 @media screen and (min-width: 768px) {
   .featured-center {
     display: grid;
@@ -548,4 +562,19 @@ min-height:calc(100vh - 62px);
   background-color: rgb(41, 115, 44);
   color: #ffffff;
   border-radius: 4px;
+}
+
+/*
+=============== 
+Home
+===============
+*/
+.home-container {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--clr-primary-5);
+  background-color: var(--clr-grey-10);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }

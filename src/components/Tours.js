@@ -22,7 +22,7 @@ const Tours = () => {
         {toursData.map((tour) => {
           return (<div>
             <Tour {...tour} key={tour.id} />
-            <button onClick={() => handeleDelete(toursData,tour.id)}> Delete </button>
+            <button className="tour-btn" onClick={() => handeleDelete(toursData,tour.id)}> Delete </button>
           </div>)
 
 
